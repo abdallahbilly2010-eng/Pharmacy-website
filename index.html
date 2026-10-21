@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pharmacy Guide</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Gelasio:wght@600;700&family=Poppins:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- ================= HEADER ================= -->
+  <header class="header">
+    <div class="navbar">
+
+      <!-- ===== Logo ===== -->
+      <a href="#" class="logo">
+        <span class="logo-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"
+            stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 5v14M5 12h14" />
+          </svg>
+        </span>
+
+        <span class="logo-text">
+          <span class="logo-title">Pharmacy Guide</span>
+          <span class="logo-sub">Trusted Health Info</span>
+        </span>
+      </a>
+
+      <!-- ===== Mobile Toggle ===== -->
+      <input type="checkbox" id="nav-toggle" class="nav-toggle">
+      <label for="nav-toggle" class="hamburger" aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+
+      <!-- ===== Navigation ===== -->
+      <ul class="Nav">
+        <li><a href="#" class="active">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#suggestions">Suggestions</a></li>
+      </ul>
+
+    </div>
+  </header>
+
+  <!-- ================= ABOUT SECTION ================= -->
+  <div class="about" id="about">
+
+    <h2 class="section-title">
+      About Our Platform
+    </h2>
+
+    <p class="about-text">
+      A trusted place to explore medication details,
+      understand ingredients, and stay informed about your health.
+    </p>
+
+  </div>
+
+  <!-- ================= ANALGESICS SECTION ================= -->
+  <section class="analgesics-section">
+
+    <h2 class="section-title">
+      1- Simple Analgesics: NSAIDs, Paracetamol
+    </h2>
+
+    <h3 class="sub-title">
+      How Simple Analgesics Work?
+    </h3>
+
+    <!-- NSAIDs -->
+    <h3 class="drug-type">
+      NSAIDs: Work by inhibiting COX-1, COX-2
+    </h3>
+
+    <p class="cox-info">
+      <strong>COX-1 (Cyclooxygenase-1):</strong>
+      Involved in protecting the stomach lining
+      and promoting platelet aggregation.
+    </p>
+
+    <p class="cox-info">
+      <strong>COX-2 (Cyclooxygenase-2):</strong>
+      Mainly involved in inflammation and pain mediation.
+    </p>
+
+    <!-- Paracetamol -->
+    <h3 class="drug-type">
+      Paracetamol: Works by inhibiting COX-3
+    </h3>
+
+    <p class="cox-info">
+      <strong>COX-3 (Cyclooxygenase-3):</strong>
+      Mainly found in the brain, involved in pain
+      and fever mediation, but its role is still
+      not fully understood.
+    </p>
+
+  </section>
+
+  <!-- ================= TABLE SECTION ================= -->
+  <div class="nsaidstable">
+
+    <table class="drugs-table">
+
+      <caption class="table-caption">
+        Active Ingredients of NSAIDs, Paracetamol
+      </caption>
+
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Available strengths</th>
+          <th>Maximum dose</th>
+          <th>Image</th>
+        </tr>
+      </thead>
+
+      <tbody>
+
+        <!-- ===== Non-Selective NSAIDs ===== -->
+        <tr class="family-row">
+          <th colspan="4">
+            Non-Selective NSAIDs (COX-1 &amp; COX-2)
+          </th>
+        </tr>
+
+        <tr>
+          <td>Acytylsalicylic acid</td>
+          <td>300, 320, 325 mg</td>
+          <td>4 gm/daily</td>
+          <td><img src="img1.jpg" alt="Rivo"></td>
+        </tr>
+
+        <tr>
+          <td>Ibuprofen</td>
+          <td>200, 400, 600, 800 mg</td>
+          <td>3200 mg/daily</td>
+          <td><img src="img2.jpg" alt="Brufen"></td>
+        </tr>
+
+        <tr>
+          <td>Ketoprofen</td>
+          <td>25, 50, 100, 150, 200 mg</td>
+          <td>200 mg/daily</td>
+          <td><img src="img3.jpg" alt="Bi-Alcofan"></td>
+        </tr>
+
+        <tr>
+          <td>Ketorolac</td>
+          <td>10 mg</td>
+          <td>40 mg/daily</td>
+          <td><img src="img4.jpg" alt="Ketolac"></td>
+        </tr>
+
+        <tr>
+          <td>Diclofenac Sodium</td>
+          <td>25, 50, 75, 100, 150 mg</td>
+          <td>150 mg/daily</td>
+          <td><img src="img5.jpg" alt="Arthrofast"></td>
+        </tr>
+
+        <tr>
+          <td>Diclofenac Potassium</td>
+          <td>25, 50, 75 mg</td>
+          <td>150 mg/daily</td>
+          <td><img src="Img6.jpg" alt="Cataflam"></td>
+        </tr>
+
+        <!-- ===== Selective COX-2 ===== -->
+        <tr class="family-row">
+          <th colspan="4">
+            Selective COX-2 Inhibitors (Coxibs)
+          </th>
+        </tr>
+
+        <tr>
+          <td>Celecoxib</td>
+          <td>100, 200 mg</td>
+          <td>400 mg/daily</td>
+          <td><img src="img7.jpg" alt="Celecoxib"></td>
+        </tr>
+
+        <tr>
+          <td>Etoricoxib</td>
+          <td>60, 90, 120 mg</td>
+          <td>120 mg/daily</td>
+          <td><img src="img8.jpg" alt="Etoricoxib"></td>
+        </tr>
+
+        <!-- ===== Selective COX-3 ===== -->
+        <tr class="family-row">
+          <th colspan="4">
+            Selective COX-3
+          </th>
+        </tr>
+
+        <tr>
+          <td>Paracetamol</td>
+          <td>500, 1000 mg</td>
+          <td>4 gm/daily</td>
+          <td><img src="Img9.jpg" alt="Paracetamol"></td>
+        </tr>
+
+      </tbody>
+
+    </table>
+
+  </div>
+
+  <!-- ===== Close mobile menu after click ===== -->
+  <script>
+    const toggle = document.getElementById('nav-toggle');
+    document.querySelectorAll('.Nav a').forEach(link => {
+      link.addEventListener('click', () => { toggle.checked = false; });
+    });
+  </script>
+
+</body>
+
+  </html>
