@@ -1,1 +1,135 @@
-/* reset web */
+
+/* =========================
+   1. General Settings
+========================= */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --primary: #2189dc;
+  --primary-dark: #185ca8;
+  --text: #19283a;
+  --muted: #66717d;
+  --background: #f2f4f7;
+  --white: #ffffff;
+  --border: #e1e5ea;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  background-color: var(--background);
+  color: var(--text);
+  line-height: 1.6;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button,
+input {
+  font: inherit;
+}
+
+
+/* =========================
+   2. Header
+========================= */
+
+.header {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 14px 4%;
+  background-color: var(--white);
+  border-bottom: 1px solid var(--border);
+}
+
+.header-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.logo {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 23px;
+  font-weight: 800;
+  line-height: 1.2;
+}
+
+.logo-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 58px;
+  height: 58px;
+  color: var(--white);
+  background-color: var(--primary);
+  border-radius: 15px;
+  font-size: 30px;
+}
+
+.login-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+  padding: 13px 18px;
+  color: var(--white);
+  background-color: var(--primary);
+  border: none;
+  border-radius: 15px;
+  font-size: 17px;
+  font-weight: 600;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+
+/* =========================
+   3. Search Bar
+========================= */
+
+.search-form {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  width: 100%;
+  min-height: 64px;
+  padding: 0 20px;
+  background-color: #f3f4f6;
+  border: 1px solid var(--border);
+  border-radius: 20px;
+}
+
+.search-icon {
+  flex-shrink: 0;
+  color: #65717e;
+  font-size: 23px;
+}
+
+.search-form input {
+  width: 100%;
+  min-width: 0;
+  padding: 16px 0;
+  color: var(--text);
+  background: transparent;
+  border: none;
+  outline: none;
+  font-size: 17px;
+}
+
+.search-form input::placeholder {
+  color: #687482;
+  opacity: 1;
+  }
